@@ -1,6 +1,6 @@
 # 🤖 typescript-time
 
-Demo project for a lunch and learn presentation about learning to use typescript
+Demo project for a lunch and learn presentation about learning to use typescript.
 
 ## Running locally
 
@@ -19,7 +19,7 @@ cd app
 ```
 yarn install
 ```
-Note: Make sure you have Node version > 14 (ex: v14.19.0)
+Note: Make sure you have Node version >= 14 (ex: v14.19.0)
 
 4. Run the app.
 ```

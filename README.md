@@ -14,3 +14,15 @@ git clone https://github.com/sdevalapurkar/typescript-time.git
 cd typescript-time
 cd app
 ```
+
+3. Install dependencies.
+```
+yarn install
+```
+Note: Make sure you have Node version > 14 (ex: v14.19.0)
+
+4. Run the app.
+```
+yarn start
+```
+Note: It may ask you to run on a different port if you already have something running on port 3000

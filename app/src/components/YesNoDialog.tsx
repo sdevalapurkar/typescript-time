@@ -7,92 +7,22 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import React, { ReactNode } from 'react';
 
 export interface IYesNoDialogProps {
-  /**
-   * optional component to render underneath the dialog text.
-   *
-   * @type {ReactNode}
-   * @memberof IYesNoDialogProps
-   */
   dialogContent?: ReactNode;
-  /**
-   * The dialog window title text.
-   *
-   * @type {string}
-   * @memberof IYesNoDialogProps
-   */
   dialogTitle: string;
-  /**
-   * The dialog window body text.
-   *
-   * @type {string}
-   * @memberof IYesNoDialogProps
-   */
   dialogText: string;
-  /**
-   * Set to `true` to open the dialog, `false` to close the dialog.
-   *
-   * @type {boolean}
-   * @memberof IYesNoDialogProps
-   */
   open: boolean;
-  /**
-   * Callback fired if the dialog is closed.
-   *
-   * @memberof IYesNoDialogProps
-   */
   onClose: () => void;
-  /**
-   * Callback fired if the 'No' button is clicked.
-   *
-   * @memberof IYesNoDialogProps
-   */
   onNo: () => void;
-  /**
-   * Callback fired if the 'Yes' button is clicked.
-   *
-   * @memberof IYesNoDialogProps
-   */
   onYes: () => void;
-
-  /**
-   * The yes button label.
-   *
-   * @type {string}
-   * @memberof IYesNoDialogProps
-   */
   yesButtonLabel?: string;
-
-  /**
-   * The no button label.
-   *
-   * @type {string}
-   * @memberof IYesNoDialogProps
-   */
   noButtonLabel?: string;
-
-  /**
-   * Optional yes-button props
-   *
-   * @type {Partial<ButtonProps>}
-   * @memberof IYesNoDialogProps
-   */
   yesButtonProps?: Partial<ButtonProps>;
-
-  /**
-   * Optional no-button props
-   *
-   * @type {Partial<ButtonProps>}
-   * @memberof IYesNoDialogProps
-   */
   noButtonProps?: Partial<ButtonProps>;
 }
 
 /**
  * A dialog for displaying a title + message (typically a question), and giving the user the option to say
  * `Yes` or `No`.
- *
- * @param {*} props
- * @return {*}
  */
 const YesNoDialog: React.FC<IYesNoDialogProps> = (props) => {
   if (!props.open) {

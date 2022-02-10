@@ -4,7 +4,7 @@ import {
   TextField,
   Button
 } from '@material-ui/core';
-import { IBird } from '../App';
+import { IBird } from '../Homepage';
 
 interface IReportFormProps {
   bird: IBird;

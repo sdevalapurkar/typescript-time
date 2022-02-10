@@ -8,7 +8,7 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import 'leaflet-fullscreen/dist/Leaflet.fullscreen.js';
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
-import { IBird } from '../App';
+import { IBird } from '../Homepage';
 import { v4 as uuidv4 } from 'uuid';
 
 /*

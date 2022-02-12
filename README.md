@@ -36,7 +36,7 @@ The goal of this practice branch is to help you learn the basics of typescript b
 
 1. Within `Homepage.tsx` try to define an interface to define a bird. Currently a bird has 4 properties, and one of these is optional. Make sure to use the correct types, without using the `any` type.
 
-2. When defining the state variables, try using <i>type assertion</i> (Ex: <string>) to make sure that the pieces of state within the application are set up to be of the appropriate type.
+2. When defining the state variables, try using <i>type assertion</i> (Ex: '<string>') to make sure that the pieces of state within the application are set up to be of the appropriate type.
 
 3. Within components that accept `props`, use <i>type annotation</i> on props and define either a type or an interface that defines the props being passed in to the component. This can be considered to be very similar to propTypes in a jsx component. <b>Note:</b> While doing this, make sure to identify props that are not mandatory to be passed into the component, and set these up as optional.
 

@@ -2,6 +2,10 @@
 
 Demo project for a lunch and learn presentation about learning to use typescript.
 
+<img width="1777" alt="Screen Shot 2022-02-11 at 9 00 34 PM" src="https://user-images.githubusercontent.com/28017034/153697439-010edb9c-8161-4bc6-943c-26911821fec1.png">
+
+<img width="1095" alt="Screen Shot 2022-02-11 at 9 00 47 PM" src="https://user-images.githubusercontent.com/28017034/153697442-bc092d80-cfa3-4bb1-a5ca-940744a3ca7f.png">
+
 ## Running locally
 
 1. Clone the repository.

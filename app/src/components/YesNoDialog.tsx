@@ -6,7 +6,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import React, { ReactNode } from 'react';
 
-export interface IYesNoDialogProps {
+interface IYesNoDialogProps {
   dialogContent?: ReactNode;
   dialogTitle: string;
   dialogText: string;

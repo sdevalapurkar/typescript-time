@@ -28,7 +28,7 @@ const eventHandlers = {
   onMounted: 'draw:mounted'
 };
 
-export interface IMapEditControlsProps {
+interface IMapEditControlsProps {
   draw: any;
   edit: any;
   position: string;

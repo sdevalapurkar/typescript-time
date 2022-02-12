@@ -44,6 +44,6 @@ The goal of this practice branch is to help you learn the basics of typescript b
 
 5. Define an interface to define the prop types of the `MapEditControls.tsx`, `Datatable.tsx` and `ReportForm.tsx` components.
 
-6. Fix any other errors or warnings that arise as a result of completing these steps.
+6. Currently our component `Datatable.tsx` is not setup in the best way possible. Although it is called a datatable, it is very specific to our concept of a bird. Later on if we have a different type of object such as a building, this table would not be setup to handle the building type. Try using <i>generics</i> to improve the interface of this component so that it can accept multiple data types and render the data effectively for not only a bird type.
 
-7. Currently our component `Datatable.tsx` is not setup in the best way possible. Although it is called a datatable, it is very specific to our concept of a bird. Later on if we have a different type of object such as a building, this table would not be setup to handle the building type. Try using <i>generics</i> to improve the interface of this component so that it can accept multiple data types and render the data effectively for not only a bird type.
+7. Fix any other errors or warnings that arise as a result of completing these steps.

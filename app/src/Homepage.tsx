@@ -16,7 +16,7 @@ export interface IBird {
   location: Feature | null;
 }
 
-export const defaultBird = {
+export const defaultBird: IBird = {
   name: '',
   details: '',
   quantity: ('' as unknown) as number,

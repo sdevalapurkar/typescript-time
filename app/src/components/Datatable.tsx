@@ -8,15 +8,9 @@ import {
   Link,
   Paper
 } from '@material-ui/core';
-import { defaultBird, IBird } from '../Homepage';
+import { defaultBird } from '../Homepage';
 
-interface IDatatableProps {
-  birds: IBird[];
-  selectedBird: IBird;
-  setSelectedBird: (selectedBird: IBird) => void;
-}
-
-function Datatable(props: IDatatableProps) {
+function Datatable(props) {
   return (
     <Paper>
       <TableContainer>
@@ -29,7 +23,7 @@ function Datatable(props: IDatatableProps) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {props.birds.map((bird: IBird) => (
+            {props.birds.map((bird) => (
               <TableRow>
                 <TableCell component="th" scope="row">
                   <Link underline="always" component="button" variant="body2" onClick={() => props.setSelectedBird(props.selectedBird.name ? defaultBird : bird)}>

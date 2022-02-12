@@ -26,3 +26,9 @@ Note: Make sure you have Node version >= 14 (ex: v14.19.0)
 yarn start
 ```
 Note: It may ask you to run on a different port if you already have something running on port 3000
+
+## Practice
+
+- To see some common examples of errors that typescript can help catch, check out the examples directory.
+
+- For the practice exercise and the instructions, checkout the `practice` branch by running `git checkout practice` and look at the `README.md` file.

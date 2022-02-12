@@ -5,26 +5,11 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import React, { ReactNode } from 'react';
-
-export interface IYesNoDialogProps {
-  dialogContent?: ReactNode;
-  dialogTitle: string;
-  dialogText: string;
-  open: boolean;
-  onClose: () => void;
-  onNo: () => void;
-  onYes: () => void;
-  yesButtonLabel?: string;
-  noButtonLabel?: string;
-  yesButtonProps?: Partial<ButtonProps>;
-  noButtonProps?: Partial<ButtonProps>;
-}
-
 /**
  * A dialog for displaying a title + message (typically a question), and giving the user the option to say
  * `Yes` or `No`.
  */
-const YesNoDialog: React.FC<IYesNoDialogProps> = (props) => {
+const YesNoDialog = (props) => {
   if (!props.open) {
     return <></>;
   }

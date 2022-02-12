@@ -6,32 +6,25 @@ import {
 } from '@material-ui/core';
 import ReportForm from './components/ReportForm';
 import { useState } from 'react';
-import { Feature } from 'geojson';
+// import { Feature } from 'geojson';
 import Datatable from './components/Datatable';
 
-export interface IBird {
-  name: string;
-  quantity: number;
-  details?: string;
-  location: Feature | null;
-}
-
-export const defaultBird: IBird = {
+export const defaultBird = {
   name: '',
   details: '',
-  quantity: ('' as unknown) as number,
+  quantity: '',
   location: null
 };
 
 function Homepage() {
   // Used to add a new spotting of a bird
-  const [bird, setBird] = useState<IBird>(defaultBird);
+  const [bird, setBird] = useState(defaultBird);
 
   // Used to show a previously spotted bird on the map
-  const [selectedBird, setSelectedBird] = useState<IBird>(defaultBird);
+  const [selectedBird, setSelectedBird] = useState(defaultBird);
 
   // Used to track all the spotted birds as a list
-  const [birds, setBirds] = useState<IBird[]>([]);
+  const [birds, setBirds] = useState([]);
 
   // Function called when Report button is clicked
   const handleFormSubmit = () => {

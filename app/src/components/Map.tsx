@@ -23,14 +23,8 @@ L.Icon.Default.mergeOptions({
   shadowUrl: iconShadow
 });
 
-interface IMapProps {
-  selectedBird?: IBird;
-  bird: IBird;
-  setBird: (bird: IBird) => void;
-}
-
-function Map(props: IMapProps) {
-  const [geometry, setGeometry] = useState<Feature | null>(null);
+function Map(props) {
+  const [geometry, setGeometry] = useState(null);
 
   useEffect(() => {
     if (geometry) {

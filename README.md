@@ -26,3 +26,12 @@ Note: Make sure you have Node version >= 14 (ex: v14.19.0)
 yarn start
 ```
 Note: It may ask you to run on a different port if you already have something running on port 3000
+
+## Practice
+
+On this branch, the interfaces and setup for the app to function correctly with typescript have been removed. Trying to run the app as it is will not work.
+The goal of this practice branch is to help you take a sample project and try to fix the issues that exist and get the application running.
+
+### Hints
+
+1.

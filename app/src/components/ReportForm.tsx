@@ -4,15 +4,8 @@ import {
   TextField,
   Button
 } from '@material-ui/core';
-import { IBird } from '../Homepage';
 
-interface IReportFormProps {
-  bird: IBird;
-  setBird: (bird: IBird) => void;
-  handleFormSubmit: () => void;
-}
-
-function ReportForm(props: IReportFormProps) {
+function ReportForm(props) {
   return (
     <>
       <Box pb={2}>
@@ -38,7 +31,7 @@ function ReportForm(props: IReportFormProps) {
           name="bird_quantity"
           label="How many did you see?"
           id="bird_quantity"
-          onChange={(e) => props.setBird({ ...props.bird, quantity: Number(e.target.value) })}
+          onChange={(e) => props.setBird({ ...props.bird, quantity: e.target.value })}
           variant="outlined"
           value={props.bird.quantity}
           fullWidth={true}

@@ -28,15 +28,7 @@ const eventHandlers = {
   onMounted: 'draw:mounted'
 };
 
-export interface IMapEditControlsProps {
-  draw: any;
-  edit: any;
-  position: string;
-  geometry: Feature | null;
-  setGeometry: (geometry: Feature) => void;
-}
-
-const MapEditControls: React.FC<IMapEditControlsProps> = (props) => {
+const MapEditControls = (props) => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const context = useLeafletContext();
   const drawRef = useRef();

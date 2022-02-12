@@ -30,7 +30,7 @@ Note: It may ask you to run on a different port if you already have something ru
 ## Practice
 
 On this branch, the interfaces and setup for the app to function correctly with typescript have been removed. Trying to run the app as it is will not work.
-The goal of this practice branch is to help you take a sample project and try to fix the issues that exist and get the application running.
+The goal of this practice branch is to help you learn the basics of typescript by taking a sample project and fixing the issues that exist/getting the application running.
 
 ### Instructions/Hints
 
@@ -38,10 +38,7 @@ The goal of this practice branch is to help you take a sample project and try to
 
 2. When defining the state variables, try using <i>type assertion</i> (Ex: <string>) to make sure that the pieces of state within the application are set up to be of the appropriate type.
 
-3. Within components that accept `props`, use <i>type annotation</i> on props and define either a type or an interface that defines the props being passed in to the component. This can be considered to be very similar to propTypes in a jsx component.
-
-#### Note
-While doing this, make sure to identify props that are not mandatory to be passed into the component, and set these up as optional.
+3. Within components that accept `props`, use <i>type annotation</i> on props and define either a type or an interface that defines the props being passed in to the component. This can be considered to be very similar to propTypes in a jsx component. <b>Note:</b> While doing this, make sure to identify props that are not mandatory to be passed into the component, and set these up as optional.
 
 4. In `Map.tsx` we have a piece of state called `geometry` which we are initializing to `null`. Use `union types` to ensure that typescript does not just consider this state to be of a null type through implicit types. Define the type for this state variable so that we can handle this case gracefully.
 

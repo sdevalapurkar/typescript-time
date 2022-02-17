@@ -8,7 +8,7 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import 'leaflet-fullscreen/dist/Leaflet.fullscreen.js';
 import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
-import { IBird } from '../Homepage';
+import { IBirdSpotting } from '../Homepage';
 import { v4 as uuidv4 } from 'uuid';
 
 /*
@@ -24,9 +24,9 @@ L.Icon.Default.mergeOptions({
 });
 
 interface IMapProps {
-  selectedBird?: IBird;
-  bird: IBird;
-  setBird: (bird: IBird) => void;
+  selectedBirdSpotting?: IBirdSpotting;
+  birdSpotting: IBirdSpotting;
+  setBirdSpotting: (birdSpotting: IBirdSpotting) => void;
 }
 
 function Map(props: IMapProps) {
@@ -34,15 +34,15 @@ function Map(props: IMapProps) {
 
   useEffect(() => {
     if (geometry) {
-      props.setBird({ ...props.bird, location: geometry });
+      props.setBirdSpotting({ ...props.birdSpotting, location: geometry });
     }
   }, [geometry]);
 
   useEffect(() => {
-    if (!props.bird.location) {
+    if (!props.birdSpotting.location) {
       setGeometry(null);
     }
-  }, [props.bird]);
+  }, [props.birdSpotting]);
 
   return (
     <MapContainer style={{ height: '400px' }} center={[49.28, -123.12]} zoom={12}>
@@ -59,8 +59,8 @@ function Map(props: IMapProps) {
         />
       </FeatureGroup>
 
-      {props.selectedBird?.location && (
-        <GeoJSON key={uuidv4()} data={props.selectedBird?.location}></GeoJSON>
+      {props.selectedBirdSpotting?.location && (
+        <GeoJSON key={uuidv4()} data={props.selectedBirdSpotting?.location}></GeoJSON>
       )}
 
       <LayersControl position="bottomright">

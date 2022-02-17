@@ -4,11 +4,11 @@ import {
   TextField,
   Button
 } from '@material-ui/core';
-import { IBird } from '../Homepage';
+import { IBirdSpotting } from '../Homepage';
 
 interface IReportFormProps {
-  bird: IBird;
-  setBird: (bird: IBird) => void;
+  birdSpotting: IBirdSpotting;
+  setBirdSpotting: (birdSpotting: IBirdSpotting) => void;
   handleFormSubmit: () => void;
 }
 
@@ -24,9 +24,9 @@ function ReportForm(props: IReportFormProps) {
           name="bird_name"
           label="What did you see?"
           id="bird_name"
-          onChange={(e) => props.setBird({ ...props.bird, name: e.target.value })}
+          onChange={(e) => props.setBirdSpotting({ ...props.birdSpotting, name: e.target.value })}
           variant="outlined"
-          value={props.bird.name}
+          value={props.birdSpotting.name}
           fullWidth={true}
           required={true}
           placeholder="Blue jay"
@@ -38,9 +38,9 @@ function ReportForm(props: IReportFormProps) {
           name="bird_quantity"
           label="How many did you see?"
           id="bird_quantity"
-          onChange={(e) => props.setBird({ ...props.bird, quantity: Number(e.target.value) })}
+          onChange={(e) => props.setBirdSpotting({ ...props.birdSpotting, quantity: Number(e.target.value) })}
           variant="outlined"
-          value={props.bird.quantity}
+          value={props.birdSpotting.quantity}
           fullWidth={true}
           required={true}
           placeholder="4"
@@ -54,9 +54,9 @@ function ReportForm(props: IReportFormProps) {
           name="bird_description"
           label="Add more details"
           id="bird_description"
-          onChange={(e) => props.setBird({ ...props.bird, details: e.target.value })}
+          onChange={(e) => props.setBirdSpotting({ ...props.birdSpotting, details: e.target.value })}
           variant="outlined"
-          value={props.bird.details}
+          value={props.birdSpotting.details}
           fullWidth={true}
           placeholder="Blue feathers with red beak, loud chirping"
         />

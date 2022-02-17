@@ -8,12 +8,12 @@ import {
   Link,
   Paper
 } from '@material-ui/core';
-import { defaultBird, IBird } from '../Homepage';
+import { defaultBirdSpotting, IBirdSpotting } from '../Homepage';
 
 interface IDatatableProps {
-  birds: IBird[];
-  selectedBird: IBird;
-  setSelectedBird: (selectedBird: IBird) => void;
+  birdSpottings: IBirdSpotting[];
+  selectedBirdSpotting: IBirdSpotting;
+  setSelectedBirdSpotting: (selectedBirdSpotting: IBirdSpotting) => void;
 }
 
 function Datatable(props: IDatatableProps) {
@@ -29,15 +29,15 @@ function Datatable(props: IDatatableProps) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {props.birds.map((bird: IBird) => (
+            {props.birdSpottings.map((birdSpotting: IBirdSpotting) => (
               <TableRow>
                 <TableCell component="th" scope="row">
-                  <Link underline="always" component="button" variant="body2" onClick={() => props.setSelectedBird(props.selectedBird.name ? defaultBird : bird)}>
-                    {bird.name}
+                  <Link underline="always" component="button" variant="body2" onClick={() => props.setSelectedBirdSpotting(props.selectedBirdSpotting.name ? defaultBirdSpotting : bird)}>
+                    {birdSpotting.name}
                   </Link>
                 </TableCell>
-                <TableCell>{bird.quantity}</TableCell>
-                <TableCell>{bird.details || 'No additional details'}</TableCell>
+                <TableCell>{birdSpotting.quantity}</TableCell>
+                <TableCell>{birdSpotting.details || 'No additional details'}</TableCell>
               </TableRow>
             ))}
           </TableBody>

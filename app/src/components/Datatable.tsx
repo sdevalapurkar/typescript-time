@@ -32,7 +32,7 @@ function Datatable(props: IDatatableProps) {
             {props.birdSpottings.map((birdSpotting: IBirdSpotting) => (
               <TableRow>
                 <TableCell component="th" scope="row">
-                  <Link underline="always" component="button" variant="body2" onClick={() => props.setSelectedBirdSpotting(props.selectedBirdSpotting.name ? defaultBirdSpotting : bird)}>
+                  <Link underline="always" component="button" variant="body2" onClick={() => props.setSelectedBirdSpotting(props.selectedBirdSpotting.name ? defaultBirdSpotting : birdSpotting)}>
                     {birdSpotting.name}
                   </Link>
                 </TableCell>
